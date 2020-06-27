@@ -1,0 +1,77 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="TPS.Site" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title><%= Page.Title %> | Taylor's Professional Services</title>
+
+    <script type="text/javascript" src="/Scripts/jquery-1.8.1.min.js"></script>
+    <% if (Trace.IsEnabled) { %>
+    <script type="text/javascript" src="/Scripts/Trace.js"></script>
+    <% } %>
+
+    <style type="text/css">
+        .footer
+        {
+            text-align:right;
+            color: #FFFFFF;
+            font-size: 12px;
+        }
+    </style>
+
+    <asp:ContentPlaceHolder ID="Head" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <form runat="server">
+
+    <div align ="center">
+        <table style = "width: 1024px" border ="0" >
+            <tr style ="height: 180px">
+            <td colspan ="2"> <img alt="Logo" src="/Images/triangle2.png"/></td>
+            </tr>
+            <tr style =" height: 500px">
+                <td style ="width: 240px; background-color: silver" align="left" valign="top">
+                    <% if (Page.User != null && Page.User.Identity != null && Page.User.Identity.IsAuthenticated) { %>
+                    <p style="text-align: center">Welcome, <%= Page.User.Identity.Name %>!</p>
+                    <% } %>
+                    <ul>
+                        <% if (Page.User.IsInRole("Manager")) { %>
+                        <li><a href="Contracts.aspx">Contracts</a></li>
+                        <li><a href="Staff.aspx">Manage Staff</a></li>
+                        <li><a href="Users.aspx">Manage Users</a></li>
+                        <li><a href="ManageRequestsCM.aspx">Staffing Requests</a></li>
+                        <% } %>
+                        <% if (Page.User.IsInRole("Client")) { %>
+                        <li><a href="MyStaffingRequests.aspx">My Staffing Request(s)</a></li>
+                        <li><a href="NewStaffingRequest.aspx">New Staffing Request</a></li>
+                        <% } %>
+                        <% if (Page.User.IsInRole("Staff")) { %>
+                        <li><a href="StaffInfo.aspx">View/Update My Information</a></li>
+                        <% } %>
+                        <li><asp:LoginStatus ID="LoginStatus1" runat="server" /></li>
+                    </ul>   
+                </td>
+                <td style ="width: 800px; background-color: white"  valign="top">
+                    <h1><%= Page.Title %></h1>
+
+                    <div style ="padding-left: 8pt; padding-right: 8pt; padding-bottom: 15pt;" align ="center">
+                    <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+                    </div>
+                
+                </td>
+            </tr>
+            <tr style ="height: 35px; width: 1024px">
+                <td 
+                    colspan ="2"; style = "background-color: darkgreen" >
+                    <p class="footer" > Copyright © <%= DateTime.Now.Year %> Taylor's Professional Services  &nbsp &nbsp</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+   </form>
+
+</body>
+</html>
+

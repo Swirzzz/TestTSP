@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TPS.FormsAuthenticationEx" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEQAAAAAAAIAAAAAAIAAAAAABAAAAAA=</HashCode>
+      <FileName>App_Code\FormsAuthenticationEx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TPS.Contracts" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAgEAAQAAAAAEAAAAgAAAAQAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Contracts.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TPS.Default" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Default.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TPS.Global" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAEAAAAAAAAAAECIBQAAAAAAAAA=</HashCode>
+      <FileName>Global.asax.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TPS.Login" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Login.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TPS.ManageRequestsCM" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>ManageRequestsCM.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TPS.MyStaffingRequests" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>MyStaffingRequests.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TPS.NewStaffingRequest" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAEIAfAAAAAAAAABgAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>NewStaffingRequest.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TPS.Site" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAABCAAAAQAAAAAAAAAAAAAAMAAEA=</HashCode>
+      <FileName>Site.master.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TPS.Staff" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIABAAAgEIAfAAAAAAAgAAgAAAAQAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Staff.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TPS.StaffInfo" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAPAAAAAAAAAAgAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>StaffInfo.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TPS.Users" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AIAAAAAgEAAAAAAAAEAgAAgAAAAQAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Users.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
